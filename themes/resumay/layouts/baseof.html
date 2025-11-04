@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-<head>
+<html
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+  lang="{{ site.Language.LanguageCode }}"
+>
   {{ partial "head.html" . }}
-</head>
-<body>
-  <header>
+  <body>
+    {{- partial "skip-link.html" . -}}
+
     {{ partial "header.html" . }}
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
+
+    <main id="main-content">
+      {{- block "main" . -}}{{- end -}}
+    </main>
+
     {{ partial "footer.html" . }}
-  </footer>
-</body>
+
+    {{- partialCached "head/js.html" . -}}
+  </body>
 </html>
