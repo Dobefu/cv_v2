@@ -2,3 +2,57 @@ baseURL = 'https://cv.connor.nl/'
 languageCode = 'en-us'
 title = 'CV - Connor van Spronssen'
 theme = 'resumay'
+
+disableHugoGeneratorInject = true
+disableKinds = []
+enableEmoji = true
+enableGitInfo = true
+enableRobotsTXT = true
+newContentEditor = 'nvim'
+printI18nWarnings = true
+printUnusedTemplates = true
+
+[params]
+  shortName = 'CV'
+  description = ''
+  backgroundColor = 'oklch(.92 .004 286.32)'
+  themeColor = '#0d6488'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[outputs]
+  home = ['html', 'rss', 'webappmanifest', 'json']
+
+[security]
+  [security.exec]
+    allow = ['^go$', '^git$', '^nvim$']
+
+[markup]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 4
+
+  [markup.highlight]
+    lineNos = true
+    noClasses = false
+
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      strikethrough = false
+
+      [markup.goldmark.extensions.extras]
+        delete.enable = true
+        mark.enable = true
+        insert.enable = true
+        subscript.enable = true
+        superscript.enable = true
+
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]']]
+          inline = [['\(', '\)']]
+
