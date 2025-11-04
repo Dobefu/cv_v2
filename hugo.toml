@@ -1,3 +1,4 @@
 baseURL = 'https://cv.connor.nl/'
 languageCode = 'en-us'
 title = 'CV - Connor van Spronssen'
+theme = 'resumay'
