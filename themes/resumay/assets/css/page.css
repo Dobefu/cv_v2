@@ -1,6 +1,4 @@
 #main-content {
-  background: var(--color-background);
-  color: var(--color-foreground);
   display: flex;
   flex: 1;
   flex-direction: column;

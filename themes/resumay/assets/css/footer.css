@@ -1,0 +1,10 @@
+.footer {
+  background: var(--color-footer-background);
+  box-shadow: var(--shadow-lg);
+  color: var(--color-footer-foreground);
+  padding: var(--spacing-xxl) var(--spacing-lg);
+}
+
+.footer p {
+  margin: 0;
+}

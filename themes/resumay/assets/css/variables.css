@@ -2,6 +2,9 @@
   --color-primary: #0d6488;
   --color-background: #e4e4e7;
   --color-foreground: #18181b;
+  --color-footer-background: #fafafa;
+  --color-footer-foreground: #000;
+  --color-footer-border: #e5e7eb;
 
   --color-link: color-mix(in srgb, var(--color-primary) 95%, #000);
   --color-link-visited: color-mix(in srgb, var(--color-primary) 95%, #000);
@@ -42,6 +45,7 @@
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
+  --spacing-xxl: 2.5rem;
 
   --border-radius-xs: 0.25rem;
   --border-radius-sm: 0.5rem;
@@ -54,6 +58,9 @@
     --color-primary: #0d6488;
     --color-background: #18181b;
     --color-foreground: #fff;
+    --color-footer-background: #09090b;
+    --color-footer-foreground: #fafafa;
+    --color-footer-border: #e5e7eb;
 
     --color-link: color-mix(in srgb, var(--color-primary) 80%, #fff);
     --color-link-visited: color-mix(in srgb, var(--color-primary) 80%, #fff);
