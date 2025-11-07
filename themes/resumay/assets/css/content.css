@@ -49,9 +49,9 @@ dl > dd {
 }
 
 mark {
-  background-color: var(--color-mark-background);
+  background-color: var(--color-mark-bg);
   border-radius: var(--border-radius-xs);
-  color: var(--color-mark-foreground);
+  color: var(--color-mark-fg);
   padding: var(--spacing-xs) var(--spacing-sm);
 }
 

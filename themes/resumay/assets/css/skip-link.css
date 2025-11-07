@@ -1,14 +1,13 @@
 .skip-link,
 .skip-link:visited {
-  background: var(--color-background);
+  background: var(--color-bg);
   border-end-end-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-lg);
-  color: var(--color-foreground);
-  opacity: 0;
+  color: var(--color-fg);
   padding: var(--spacing-sm);
   position: absolute;
   text-decoration: none;
-  transform: translateY(calc(-100% - 1rem));
+  transform: translateY(-999%);
   z-index: 9999;
 }
 

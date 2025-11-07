@@ -7,14 +7,14 @@ table {
 }
 
 th {
-  background: var(--color-table-header-background);
-  color: var(--color-table-header-foreground);
+  background: var(--color-table-header-bg);
+  color: var(--color-table-header-fg);
   font-weight: 600;
 }
 
 td {
   border-block-start: 1px solid var(--color-table-border);
-  color: var(--color-table-foreground);
+  color: var(--color-table-fg);
 }
 
 th,

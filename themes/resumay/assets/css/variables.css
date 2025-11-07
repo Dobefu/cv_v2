@@ -1,38 +1,36 @@
 :root {
   --color-primary: #0d6488;
-  --color-background: #e4e4e7;
-  --color-foreground: #18181b;
-  --color-header-background: color-mix(
-    in srgb,
-    var(--color-primary) 80%,
-    transparent
-  );
-  --color-header-foreground: #fafafa;
+  --color-bg: #e4e4e7;
+  --color-fg: #18181b;
+  --color-header-bg: color-mix(in srgb, var(--color-primary) 80%, transparent);
+  --color-header-fg: #fafafa;
   --color-header-border: transparent;
-  --color-dropdown-background: #fff;
-  --color-dropdown-foreground: #171717;
-  --color-footer-background: #fafafa;
-  --color-footer-foreground: #09090b;
-  --color-footer-link-foreground: #52525c;
+  --color-dropdown-bg: #fff;
+  --color-dropdown-fg: #171717;
+  --color-content-bg: #fff;
+  --color-content-fg: #171717;
+  --color-footer-bg: #fafafa;
+  --color-footer-fg: #09090b;
+  --color-footer-link-fg: #52525c;
   --color-footer-border: transparent;
 
   --color-link: color-mix(in srgb, var(--color-primary) 95%, #000);
   --color-link-visited: color-mix(in srgb, var(--color-primary) 95%, #000);
   --color-hr: #e2e8f0;
   --color-table-border: #e2e8f0;
-  --color-table-header-background: #f8fafc;
-  --color-table-header-foreground: #171717;
-  --color-table-foreground: #171717;
-  --color-mark-background: #e5e7eb;
-  --color-mark-foreground: #171717;
+  --color-table-header-bg: #f8fafc;
+  --color-table-header-fg: #171717;
+  --color-table-fg: #171717;
+  --color-mark-bg: #e5e7eb;
+  --color-mark-fg: #171717;
   --color-success: #32743f;
   --color-error: #e7000b;
 
-  --color-chroma-background: #f8fafc;
-  --color-chroma-foreground: #000;
+  --color-chroma-bg: #f8fafc;
+  --color-chroma-fg: #000;
   --color-chroma-border: #e5e7eb;
-  --color-chroma-highlight-background: #e5e7eb;
-  --color-chroma-highlight-foreground: #3f3f3f;
+  --color-chroma-highlight-bg: #e5e7eb;
+  --color-chroma-highlight-fg: #3f3f3f;
   --color-chroma-line: #3f3f3f;
   --color-chroma-keyword: #685d1a;
   --color-chroma-type: #99610c;
@@ -65,40 +63,42 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-primary: #0d6488;
-    --color-background: #18181b;
-    --color-foreground: #fff;
-    --color-header-background: color-mix(
+    --color-primary: #0f8abd;
+    --color-bg: #18181b;
+    --color-fg: #fff;
+    --color-header-bg: color-mix(
       in srgb,
-      var(--color-primary) 80%,
+      var(--color-primary) 60%,
       transparent
     );
-    --color-header-foreground: #fafafa;
+    --color-header-fg: #fafafa;
     --color-header-border: transparent;
-    --color-dropdown-background: #09090b;
-    --color-dropdown-foreground: #fff;
-    --color-footer-background: #09090b;
-    --color-footer-foreground: #fafafa;
-    --color-footer-link-foreground: #ceced2;
+    --color-dropdown-bg: #09090b;
+    --color-dropdown-fg: #fafafa;
+    --color-content-bg: #27272a;
+    --color-content-fg: #fafafa;
+    --color-footer-bg: #09090b;
+    --color-footer-fg: #fafafa;
+    --color-footer-link-fg: #ceced2;
     --color-footer-border: #e5e7eb;
 
     --color-link: color-mix(in srgb, var(--color-primary) 80%, #fff);
     --color-link-visited: color-mix(in srgb, var(--color-primary) 80%, #fff);
     --color-hr: #262626;
     --color-table-border: #262626;
-    --color-table-header-background: #171717;
-    --color-table-header-foreground: #f8fafc;
-    --color-table-foreground: #f8fafc;
-    --color-mark-background: #262626;
-    --color-mark-foreground: #f8fafc;
+    --color-table-header-bg: #171717;
+    --color-table-header-fg: #f8fafc;
+    --color-table-fg: #f8fafc;
+    --color-mark-bg: #262626;
+    --color-mark-fg: #f8fafc;
     --color-success: #56c16b;
     --color-error: #e7000b;
 
-    --color-chroma-background: #171717;
-    --color-chroma-foreground: #f8f8f8;
+    --color-chroma-bg: #171717;
+    --color-chroma-fg: #f8f8f8;
     --color-chroma-border: #262626;
-    --color-chroma-highlight-background: #262626;
-    --color-chroma-highlight-foreground: #a3a3a3;
+    --color-chroma-highlight-bg: #262626;
+    --color-chroma-highlight-fg: #a3a3a3;
     --color-chroma-line: #a3a3a3;
     --color-chroma-keyword: #f1e161;
     --color-chroma-type: #ffc266;

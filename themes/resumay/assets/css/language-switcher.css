@@ -5,14 +5,10 @@
 
 .language-switcher__button {
   align-items: center;
-  color: var(--color-header-foreground);
+  color: var(--color-header-fg);
   cursor: pointer;
   display: flex;
   gap: var(--spacing-sm);
-}
-
-.language-switcher__button::after {
-  content: "▼";
 }
 
 .language-switcher__icon {
@@ -23,10 +19,10 @@
 }
 
 ul.language-switcher__dropdown {
-  background: var(--color-dropdown-background);
+  background: var(--color-dropdown-bg);
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-lg);
-  color: var(--color-dropdown-foreground);
+  color: var(--color-dropdown-fg);
   inset-inline: calc(var(--spacing-md) * -1);
   margin-block-start: var(--spacing-md);
   opacity: 0;
@@ -53,7 +49,7 @@ ul.language-switcher__dropdown {
 
 .language-switcher__dropdown > li > a {
   align-items: center;
-  color: var(--color-dropdown-foreground);
+  color: var(--color-dropdown-fg);
   display: flex;
   gap: var(--spacing-sm);
   padding: var(--spacing-md);

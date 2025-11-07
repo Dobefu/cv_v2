@@ -10,6 +10,8 @@
     />
 
     {{- i18n (printf "language.%s" .Language.Lang) -}}
+
+    {{- readFile "static/icons/caret-down.svg" | safeHTML -}}
   </button>
 
   <ul

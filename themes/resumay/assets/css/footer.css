@@ -1,7 +1,7 @@
 .footer {
-  background: var(--color-footer-background);
+  background: var(--color-footer-bg);
   box-shadow: var(--shadow-lg);
-  color: var(--color-footer-foreground);
+  color: var(--color-footer-fg);
   padding: var(--spacing-xxl) var(--spacing-lg);
 }
 
@@ -41,7 +41,7 @@
 }
 
 .footer a {
-  color: var(--color-footer-link-foreground);
+  color: var(--color-footer-link-fg);
   text-decoration: none;
 }
 

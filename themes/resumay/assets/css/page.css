@@ -5,3 +5,11 @@
   height: 100%;
   padding: var(--spacing-md);
 }
+
+#main-content > .container {
+  background: var(--color-content-bg);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-lg);
+  color: var(--color-content-fg);
+  padding: var(--spacing-xl);
+}

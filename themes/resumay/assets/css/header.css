@@ -1,5 +1,5 @@
 .header {
-  background: var(--color-header-background);
+  background: var(--color-header-bg);
   inset-block-start: 0;
   padding: var(--spacing-md);
   position: sticky;
@@ -23,7 +23,7 @@
 }
 
 .header h1 {
-  color: var(--color-header-foreground);
+  color: var(--color-header-fg);
   font-size: 1.5rem;
   margin: 0;
 }
@@ -38,6 +38,6 @@
 }
 
 .header a {
-  color: var(--color-header-foreground);
+  color: var(--color-header-fg);
   text-decoration: none;
 }

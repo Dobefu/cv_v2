@@ -20,8 +20,8 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background: var(--color-background);
-  color: var(--color-foreground);
+  background: var(--color-bg);
+  color: var(--color-fg);
   font-family: sans-serif;
   line-height: 1.4;
 }
