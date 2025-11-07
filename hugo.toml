@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'CV - Connor van Spronssen'
 theme = 'resumay'
 
+defaultContentLanguage = 'en'
+defaultContentLanguageInSubdir = true
+
 disableHugoGeneratorInject = true
 disableKinds = []
 enableEmoji = true
@@ -28,6 +31,17 @@ printUnusedTemplates = true
 [security]
   [security.exec]
     allow = ['^go$', '^git$', '^nvim$']
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    languageName = 'English'
+    weight = 10
+
+  [languages.nl]
+    contentDir = 'content/nl'
+    languageName = 'Dutch'
+    weight = 20
 
 [markup]
   [markup.tableOfContents]

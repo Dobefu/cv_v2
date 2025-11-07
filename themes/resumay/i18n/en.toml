@@ -1,2 +1,9 @@
 [skip-link]
   title = "Skip to main content"
+
+[language]
+  en = "English"
+  nl = "Dutch"
+
+[language-switcher]
+  title = "Choose a language"

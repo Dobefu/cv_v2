@@ -1,13 +1,13 @@
-<header class="header">
+<header aria-label="{{- site.Title -}}" class="header">
   <div class="container">
     <a href="/">
       <h1 class="header__title">
-        <img src="/logo-white.svg" />
+        <img aria-hidden="true" src="/logo-white.svg" />
 
         {{- site.Title -}}
       </h1>
     </a>
 
-    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+    {{- partial "language-switcher.html" . -}}
   </div>
 </header>

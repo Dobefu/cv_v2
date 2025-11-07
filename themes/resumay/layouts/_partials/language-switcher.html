@@ -1,0 +1,33 @@
+<div class="language-switcher">
+  <button
+    class="language-switcher__button"
+    title="{{- .Language.LanguageName -}}"
+  >
+    <img
+      aria-hidden="true"
+      class="language-switcher__icon"
+      src="/flags/{{- .Language.Lang -}}.svg"
+    />
+
+    {{- i18n (printf "language.%s" .Language.Lang) -}}
+  </button>
+
+  <ul
+    class="language-switcher__dropdown"
+    title="{{- i18n "language-switcher.title" -}}"
+  >
+    {{- range .AllTranslations -}}
+      <li>
+        <a href="{{ .RelPermalink }}" title="{{- .Language.LanguageName -}}">
+          <img
+            aria-hidden="true"
+            class="language-switcher__icon"
+            src="/flags/{{- .Language.Lang -}}.svg"
+          />
+
+          {{- i18n (printf "language.%s" .Language.Lang) -}}
+        </a>
+      </li>
+    {{- end -}}
+  </ul>
+</div>

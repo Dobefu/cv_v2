@@ -9,6 +9,8 @@
   );
   --color-header-foreground: #fafafa;
   --color-header-border: transparent;
+  --color-dropdown-background: #fff;
+  --color-dropdown-foreground: #171717;
   --color-footer-background: #fafafa;
   --color-footer-foreground: #09090b;
   --color-footer-border: transparent;
@@ -72,6 +74,8 @@
     );
     --color-header-foreground: #fafafa;
     --color-header-border: transparent;
+    --color-dropdown-background: #09090b;
+    --color-dropdown-foreground: #fff;
     --color-footer-background: #09090b;
     --color-footer-foreground: #fafafa;
     --color-footer-border: #e5e7eb;
