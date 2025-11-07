@@ -1,5 +1,13 @@
 <header class="header">
-  <h1>{{ site.Title }}</h1>
+  <div class="container">
+    <a href="/">
+      <h1 class="header__title">
+        <img src="/logo-white.svg" />
 
-  {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+        {{- site.Title -}}
+      </h1>
+    </a>
+
+    {{ partial "menu.html" (dict "menuID" "main" "page" .) }}
+  </div>
 </header>

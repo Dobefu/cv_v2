@@ -2,9 +2,16 @@
   --color-primary: #0d6488;
   --color-background: #e4e4e7;
   --color-foreground: #18181b;
+  --color-header-background: color-mix(
+    in srgb,
+    var(--color-primary) 80%,
+    transparent
+  );
+  --color-header-foreground: #fafafa;
+  --color-header-border: transparent;
   --color-footer-background: #fafafa;
-  --color-footer-foreground: #000;
-  --color-footer-border: #e5e7eb;
+  --color-footer-foreground: #09090b;
+  --color-footer-border: transparent;
 
   --color-link: color-mix(in srgb, var(--color-primary) 95%, #000);
   --color-link-visited: color-mix(in srgb, var(--color-primary) 95%, #000);
@@ -58,6 +65,13 @@
     --color-primary: #0d6488;
     --color-background: #18181b;
     --color-foreground: #fff;
+    --color-header-background: color-mix(
+      in srgb,
+      var(--color-primary) 80%,
+      transparent
+    );
+    --color-header-foreground: #fafafa;
+    --color-header-border: transparent;
     --color-footer-background: #09090b;
     --color-footer-foreground: #fafafa;
     --color-footer-border: #e5e7eb;
