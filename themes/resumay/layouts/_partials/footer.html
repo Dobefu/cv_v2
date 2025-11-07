@@ -7,12 +7,11 @@
     <div class="footer__social-links">
       {{- range $key, $value := .Site.Params.SocialLinks -}}
         <a
-          href="{{ $value }}"
-          rel="noopener noreferrer"
-          target="_blank"
+          href="{{ $value | relLangURL }}"
+          {{- if not (eq $key "rss") -}}rel="noopener noreferrer" target="_blank"{{- end -}}
           title="{{ i18n (printf "social-links.%s" $key) }}"
         >
-          {{- $iconPath := printf "static/socials/%s.svg" $key -}}
+          {{- $iconPath := printf "static/icons/%s.svg" $key -}}
           {{- $iconContent := readFile $iconPath -}}
 
           {{- if $iconContent -}}

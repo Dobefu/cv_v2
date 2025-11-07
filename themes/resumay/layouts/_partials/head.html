@@ -16,6 +16,10 @@
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="manifest" href="{{ .Site.BaseURL }}manifest.webmanifest">
 
+  {{- with .OutputFormats.Get "rss" -}}
+    {{- printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML -}}
+  {{- end -}}
+
   <meta property="og:title" content="{{ $title }}">
   <meta property="og:description" content="{{ $description }}">
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">

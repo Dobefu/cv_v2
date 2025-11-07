@@ -27,7 +27,7 @@ printUnusedTemplates = true
     bluesky = 'https://bsky.app/profile/connor.nl'
     gitlab = 'https://gitlab.com/Dobefu'
     drupal = 'https://www.drupal.org/u/Dobefu'
-    rss = '/rss.xml'
+    rss = '/index.xml'
 
 [caches]
   [caches.images]
