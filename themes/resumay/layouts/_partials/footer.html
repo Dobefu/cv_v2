@@ -1,3 +1,27 @@
 <footer class="footer">
-  <p>{{ .Site.Title }}</p>
+  <div class="container">
+    <a class="footer__title" href="{{- "/" | relLangURL -}}">{{- .Site.Title -}}</a>
+
+    {{- partial "menu.html" (dict "menuID" "main" "page" .) -}}
+
+    <div class="footer__social-links">
+      {{- range $key, $value := .Site.Params.SocialLinks -}}
+        <a
+          href="{{ $value }}"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="{{ i18n (printf "social-links.%s" $key) }}"
+        >
+          {{- $iconPath := printf "static/socials/%s.svg" $key -}}
+          {{- $iconContent := readFile $iconPath -}}
+
+          {{- if $iconContent -}}
+            {{- $iconContent | safeHTML -}}
+          {{- else -}}
+            {{- warnf "Icon %s not found" $iconPath -}}
+          {{- end -}}
+        </a>
+      {{- end -}}
+    </div>
+  </div>
 </footer>

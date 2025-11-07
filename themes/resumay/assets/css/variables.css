@@ -13,6 +13,7 @@
   --color-dropdown-foreground: #171717;
   --color-footer-background: #fafafa;
   --color-footer-foreground: #09090b;
+  --color-footer-link-foreground: #52525c;
   --color-footer-border: transparent;
 
   --color-link: color-mix(in srgb, var(--color-primary) 95%, #000);
@@ -78,6 +79,7 @@
     --color-dropdown-foreground: #fff;
     --color-footer-background: #09090b;
     --color-footer-foreground: #fafafa;
+    --color-footer-link-foreground: #ceced2;
     --color-footer-border: #e5e7eb;
 
     --color-link: color-mix(in srgb, var(--color-primary) 80%, #fff);

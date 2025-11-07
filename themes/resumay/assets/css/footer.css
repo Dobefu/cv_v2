@@ -5,6 +5,57 @@
   padding: var(--spacing-xxl) var(--spacing-lg);
 }
 
+.footer > .container {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-lg);
+  justify-content: space-between;
+}
+
+@media (max-width: 45rem) {
+  .footer > .container {
+    flex-direction: column;
+  }
+}
+
+.footer__title {
+  font-size: 1.25remi;
+}
+
 .footer p {
   margin: 0;
+}
+
+.footer ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer ul li > a {
+  padding: var(--spacing-md);
+}
+
+.footer a {
+  color: var(--color-footer-link-foreground);
+  text-decoration: none;
+}
+
+.footer__social-links {
+  align-items: center;
+  display: flex;
+}
+
+.footer__social-links > a {
+  padding: var(--spacing-sm);
+}
+
+.footer__social-links > a > svg {
+  height: 1.25rem;
+  vertical-align: bottom;
+  width: 1.25rem;
 }

@@ -7,3 +7,11 @@
 
 [language-switcher]
   title = "Kies een taal"
+
+[social-links]
+  linkedin = "LinkedIn"
+  github = "GitHub"
+  bluesky = "BlueSky"
+  gitlab = "Gitlab"
+  drupal = "Drupal"
+  rss = "RSS"
