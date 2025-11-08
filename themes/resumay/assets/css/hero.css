@@ -19,7 +19,7 @@
 
 .hero > .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   padding: 7rem var(--spacing-xl) 1.75rem var(--spacing-xl);
   z-index: 1;
 }
@@ -27,6 +27,7 @@
 @media (max-width: 45rem) {
   .hero > .container {
     grid-template-columns: 1fr;
+    padding-block-start: 8rem;
   }
 }
 
@@ -36,6 +37,11 @@
 
 .hero__info * {
   color: #fff;
+}
+
+.hero__info h1,
+.hero__info h2 {
+  text-shadow: 2px 2px black;
 }
 
 .hero__info h1 {
