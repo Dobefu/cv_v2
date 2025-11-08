@@ -9,6 +9,8 @@
 
     {{ partial "header.html" . }}
 
+    {{- block "hero" . -}}{{- end -}}
+
     <main id="main-content">
       <div class="container">
         {{- block "main" . -}}{{- end -}}

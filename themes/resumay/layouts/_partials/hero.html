@@ -1,0 +1,26 @@
+{{- if .Params.hero -}}
+  <div
+    class="hero"
+    style="--bg-img: url('{{- .Params.heroBg -}}')"
+  >
+    <div class="container">
+      <div class="hero__info">
+        {{- if .Params.heroTitle -}}
+          <h1>{{- .Params.heroTitle -}}</h1>
+        {{- end -}}
+
+        {{- if .Params.heroSubtitle -}}
+          <h2>{{- .Params.heroSubtitle -}}</h2>
+        {{- end -}}
+      </div>
+
+      {{- if .Params.heroImg -}}
+        <img
+          aria-hidden="true"
+          class="hero__img"
+          src="{{- .Params.heroImg -}}"
+        />
+      {{- end -}}
+    </div>
+  </div>
+{{- end -}}

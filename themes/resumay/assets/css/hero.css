@@ -1,0 +1,47 @@
+.hero {
+  background-image: var(--bg-img);
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+  margin-block-end: -2.75rem;
+  margin-block-start: -8rem;
+  min-height: 32rem;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.2);
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.hero > .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 7rem var(--spacing-xl) 1.75rem var(--spacing-xl);
+  z-index: 1;
+}
+
+.hero__info {
+  margin-block: auto;
+}
+
+.hero__info * {
+  color: #fff;
+}
+
+.hero__info h1 {
+  font-size: 2.75rem;
+}
+
+.hero__info h2 {
+  font-size: 2rem;
+}
+
+.hero__img {
+  height: 16rem;
+  margin: auto auto 0 auto;
+  width: 16rem;
+}

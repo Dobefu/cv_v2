@@ -1,9 +1,7 @@
-{{ define "main" }}
-  {{ .Content }}
-  {{ range site.RegularPages }}
-    <section>
-      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ .Summary }}
-    </section>
-  {{ end }}
-{{ end }}
+{{- define "hero" -}}
+  {{- partial "hero.html" . -}}
+{{- end -}}
+
+{{- define "main" -}}
+  {{- .Content -}}
+{{- end -}}
