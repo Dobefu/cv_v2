@@ -14,3 +14,11 @@
   color: var(--color-content-fg);
   padding: var(--spacing-xl);
 }
+
+#main-content > .container > *:first-child {
+  margin-block-start: 0;
+}
+
+#main-content > .container > *:last-child {
+  margin-block-end: 0;
+}
