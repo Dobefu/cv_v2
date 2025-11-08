@@ -17,6 +17,12 @@
   gap: var(--spacing-sm);
 }
 
+@media (max-width: 45rem) {
+  .language-switcher__button {
+    font-size: 0;
+  }
+}
+
 .language-switcher__icon {
   border-radius: var(--border-radius-full);
   box-shadow: var(--shadow-md);
