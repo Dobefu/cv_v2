@@ -44,3 +44,7 @@ Feel free to explore my personal Neovim configuration on [GitHub](https://github
 
 I also create various [personal projects](/projects) in my spare time to keep learning and improving my skills.
 These projects range from web applications to CLI applications, all aimed at enhancing my expertise and practical experience in the field.
+
+---
+
+## Contact

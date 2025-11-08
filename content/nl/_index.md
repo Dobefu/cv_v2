@@ -44,3 +44,7 @@ Voel je vrij om mijn persoonlijke Neovim-configuratie op [GitHub](https://github
 
 Ik maak ook diverse [persoonlijke projecten](/projects) in mijn vrije tijd om mijn vaardigheden te blijven verbeteren.
 Deze projecten variëren van webapplicaties tot CLI-toepassingen, om mijn expertise en praktijkervaring in het vakgebied te verbeteren.
+
+---
+
+## Contact
