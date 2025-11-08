@@ -4,6 +4,7 @@
   flex-direction: column;
   height: 100%;
   padding: var(--spacing-md);
+  z-index: 1;
 }
 
 #main-content > .container {
