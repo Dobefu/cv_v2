@@ -28,8 +28,8 @@
     #000
   );
 
-  --color-link: color-mix(in srgb, var(--color-primary) 95%, #000);
-  --color-link-visited: color-mix(in srgb, var(--color-primary) 95%, #000);
+  --color-link: #0069a8;
+  --color-link-visited: var(--color-link);
   --color-hr: #d4d4d8;
   --color-table-border: #e2e8f0;
   --color-table-header-bg: #f8fafc;
@@ -97,8 +97,8 @@
     --color-footer-link-fg: #ceced2;
     --color-footer-border: #e5e7eb;
 
-    --color-link: color-mix(in srgb, var(--color-primary) 80%, #fff);
-    --color-link-visited: color-mix(in srgb, var(--color-primary) 80%, #fff);
+    --color-link: #00bcff;
+    --color-link-visited: var(--color-link);
     --color-hr: #52525c;
     --color-table-border: #262626;
     --color-table-header-bg: #171717;
