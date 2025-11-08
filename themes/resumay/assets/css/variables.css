@@ -14,6 +14,19 @@
   --color-footer-fg: #09090b;
   --color-footer-link-fg: #52525c;
   --color-footer-border: transparent;
+  --color-btn-bg: var(--color-primary);
+  --color-btn-bg--hover: color-mix(in srgb, var(--color-primary) 85%, #000);
+  --color-btn-bg--active: color-mix(in srgb, var(--color-primary) 75%, #000);
+  --color-btn-fg: #fff;
+  --color-btn-fg--hover: #fff;
+  --color-btn-fg--active: #fff;
+  --color-btn-border: color-mix(in srgb, var(--color-primary) 65%, #000);
+  --color-btn-border--hover: color-mix(in srgb, var(--color-primary) 55%, #000);
+  --color-btn-border--active: color-mix(
+    in srgb,
+    var(--color-primary) 45%,
+    #000
+  );
 
   --color-link: color-mix(in srgb, var(--color-primary) 95%, #000);
   --color-link-visited: color-mix(in srgb, var(--color-primary) 95%, #000);

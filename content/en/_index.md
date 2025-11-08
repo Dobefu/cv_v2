@@ -11,4 +11,6 @@ draft = false
     heroTitle = "Connor van Spronssen"
     heroSubtitle = "Full-stack web engineer"
     heroImg = "/avatar-transparent.png"
+    heroCtaText = "Explore my projects"
+    heroCtaURl = "/projects"
 +++

@@ -12,6 +12,14 @@
         {{- if .Params.heroSubtitle -}}
           <h2>{{- .Params.heroSubtitle -}}</h2>
         {{- end -}}
+
+        {{- if and .Params.heroCtaText .Params.heroCtaURL -}}
+          <a class="btn" href="{{- .Params.heroCtaURL | relLangURL -}}">
+            {{- readFile "static/icons/chevron-right.svg" | safeHTML -}}
+
+            {{- .Params.heroCtaText -}}
+          </a>
+        {{- end -}}
       </div>
 
       {{- if .Params.heroImg -}}
