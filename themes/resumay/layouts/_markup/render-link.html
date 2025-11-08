@@ -1,0 +1,10 @@
+{{- $url := urls.Parse .Destination -}}
+
+<a
+  {{- if $url.IsAbs }} href="{{ .Destination | safeURL }}"{{ else }} href="{{ .Destination | relLangURL }}"{{ end -}}
+  {{- with .Title }} title="{{ . }}"{{ end -}}
+  {{- if $url.IsAbs }} rel="external" target="_blank"{{ end -}}
+>
+  {{- with .Text }}{{ . }}{{ end -}}
+</a>
+{{- /* Chomp trailing newline, to prevent underlined spaces */ -}}
