@@ -1,15 +1,19 @@
 .header {
-  background: var(--color-header-bg);
   inset-block-start: 0;
-  padding: var(--spacing-md);
   position: sticky;
   z-index: 10;
 }
 
-.header > .container {
+.header__inner {
   align-items: center;
+  backdrop-filter: blur(1rem);
+  background: var(--color-header-bg);
+  border-radius: var(--border-radius-full);
   display: flex;
+  gap: var(--spacing-md);
   justify-content: space-between;
+  margin: var(--spacing-md);
+  padding: var(--spacing-md);
 }
 
 .header__title {
@@ -19,13 +23,19 @@
 }
 
 .header__title > img {
-  height: 4rem;
+  height: 3rem;
 }
 
 .header h1 {
   color: var(--color-header-fg);
   font-size: 1.5rem;
   margin: 0;
+}
+
+@media (max-width: 45rem) {
+  .header h1 {
+    font-size: 1rem;
+  }
 }
 
 .header ul {
