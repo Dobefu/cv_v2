@@ -1,7 +1,7 @@
 <div class="language-switcher">
   <button
     class="language-switcher__button"
-    title="{{- .Language.LanguageName -}}"
+    title="{{- i18n (printf "language.%s" .Language.Lang) -}}"
   >
     <img
       aria-hidden="true"
@@ -20,7 +20,10 @@
   >
     {{- range .AllTranslations -}}
       <li>
-        <a href="{{ .RelPermalink }}" title="{{- .Language.LanguageName -}}">
+        <a
+          href="{{ .RelPermalink }}"
+          title="{{- i18n (printf "language.%s" .Language.Lang) -}}"
+        >
           <img
             aria-hidden="true"
             class="language-switcher__icon"
