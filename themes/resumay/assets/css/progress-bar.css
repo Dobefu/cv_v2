@@ -1,0 +1,18 @@
+.progress-bar {
+  padding: var(--spacing-sm) 0;
+}
+
+.progress-bar label {
+  color: var(--color-heading-fg);
+  cursor: pointer;
+  display: block;
+  padding-bottom: var(--spacing-sm);
+}
+
+.progress-bar__track {
+  background: var(--color-secondary);
+  border-radius: var(--border-radius-full);
+  box-shadow: var(--shadow-md);
+  height: var(--spacing-lg);
+  min-width: var(--spacing-lg);
+}

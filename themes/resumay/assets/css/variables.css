@@ -1,5 +1,6 @@
 :root {
   --color-primary: #005486;
+  --color-secondary: #ec6609;
   --color-bg: #e4e4e7;
   --color-fg: #18181b;
   --color-header-bg: color-mix(in srgb, var(--color-primary) 75%, transparent);
@@ -78,6 +79,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --color-primary: #005486;
+    --color-secondary: #ec6609;
     --color-bg: #18181b;
     --color-fg: #fff;
     --color-header-bg: color-mix(
