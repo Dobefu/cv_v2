@@ -1,0 +1,33 @@
+.image-field {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.image-field,
+.image-field:visited {
+  color: var(--color-fg);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.image-field > img {
+  height: 6.25rem;
+  width: 6.25rem;
+}
+
+.image-field label {
+  color: var(--color-heading-fg);
+  cursor: pointer;
+  display: block;
+  padding-bottom: var(--spacing-xs);
+}
+
+.image-field p {
+  display: block;
+  margin: 0;
+}
+
+.image-field p:first-of-type {
+  padding-bottom: var(--spacing-xs);
+}
