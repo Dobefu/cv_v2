@@ -109,3 +109,9 @@ These projects range from web applications to CLI applications, all aimed at enh
 {{<progress-bar label="(Neo)Vim" percentage="80">}}
 {{<progress-bar label="Networking" percentage="75">}}
 {{<progress-bar label="Ansible" percentage="70">}}
+
+---
+
+## Certifications
+
+{{<image-field url="https://dev.acquia.com/person/community/connor-van-spronssen" img="/img/cert_drupal9.png" label="Acquia Certified Developer" text="Drupal 9" subtext="Certified on 7 December 2022">}}
