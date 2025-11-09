@@ -71,3 +71,41 @@ These projects range from web applications to CLI applications, all aimed at enh
 {{<image-field url="https://www.appnovation.com/" img="/img/logo_appnovation.png" label="Appnovation" text="Consultant, Technology" subtext="1 January 2021 - 2 January 2022">}}
 {{<image-field url="https://www.appnovation.com/" img="/img/logo_appnovation.png" label="Appnovation" text="Senior Consultant, Technology" subtext="2 January 2022 - 30 June 2023">}}
 {{<image-field url="https://www.iodigital.com/en" img="/img/logo_io.png" label="iO" text="Software Engineer" subtext="1 July 2023 - Present">}}
+
+---
+
+## Skills
+
+### Spoken Languages
+
+{{<progress-bar label="Dutch" percentage="90">}}
+{{<progress-bar label="English" percentage="85">}}
+
+### Programming Languages
+
+{{<progress-bar label="PHP" percentage="90">}}
+{{<progress-bar label="TypeScript" percentage="85">}}
+{{<progress-bar label="JavaScript" percentage="85">}}
+{{<progress-bar label="Go" percentage="80">}}
+{{<progress-bar label="Bash" percentage="65">}}
+{{<progress-bar label="C#" percentage="60">}}
+{{<progress-bar label="C" percentage="40">}}
+{{<progress-bar label="C++" percentage="30">}}
+
+### Technologies
+
+{{<progress-bar label="Drupal 8 / 9 / 10 / 11" percentage="90">}}
+{{<progress-bar label="NextJS" percentage="85">}}
+{{<progress-bar label="NuxtJS" percentage="80">}}
+{{<progress-bar label="Drupal 7" percentage="75">}}
+{{<progress-bar label="Unity3D" percentage="70">}}
+{{<progress-bar label="Hugo" percentage="70">}}
+
+### Miscellaneous Skills
+
+{{<progress-bar label="CI / CD" percentage="90">}}
+{{<progress-bar label="Linux" percentage="90">}}
+{{<progress-bar label="Docker" percentage="85">}}
+{{<progress-bar label="(Neo)Vim" percentage="80">}}
+{{<progress-bar label="Networking" percentage="75">}}
+{{<progress-bar label="Ansible" percentage="70">}}
