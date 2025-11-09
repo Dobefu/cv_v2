@@ -1,0 +1,14 @@
+.columns {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 45rem) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
+.columns > * {
+  flex: 1;
+}
