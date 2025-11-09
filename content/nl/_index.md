@@ -48,3 +48,10 @@ Deze projecten variëren van webapplicaties tot CLI-toepassingen, om mijn expert
 ---
 
 ## Contact
+
+{{<columns>}}
+{{<icon-field icon="mail" label="E-mail" text="info@dobefu.com">}}
+{{<icon-field icon="cake" label="Geboortedatum" text="18 September 1997">}}
+{{</columns>}}
+
+---

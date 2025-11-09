@@ -1,0 +1,19 @@
+.icon-field {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.icon-field > svg {
+  color: var(--color-heading-fg);
+  height: 2rem;
+  width: 2rem;
+}
+
+.icon-field label {
+  color: var(--color-heading-fg);
+}
+
+.icon-field p {
+  margin: 0;
+}

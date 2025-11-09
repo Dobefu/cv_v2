@@ -1,0 +1,15 @@
+<div class="icon-field">
+  {{- $iconPath := printf "static/icons/%s.svg" .Params.icon -}}
+  {{- $iconContent := readFile $iconPath -}}
+
+  {{- if $iconContent -}}
+    {{- $iconContent | safeHTML -}}
+  {{- else -}}
+    {{- warnf "Icon %s not found" $iconPath -}}
+  {{- end -}}
+
+  <div>
+    <label>{{- .Params.label -}}</label>
+    <p>{{- .Params.text -}}</p>
+  </div>
+</div>

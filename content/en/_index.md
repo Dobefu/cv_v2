@@ -48,3 +48,10 @@ These projects range from web applications to CLI applications, all aimed at enh
 ---
 
 ## Contact
+
+{{<columns>}}
+{{<icon-field icon="mail" label="Email" text="info@dobefu.com">}}
+{{<icon-field icon="cake" label="Date of Birth" text="18 September 1997">}}
+{{</columns>}}
+
+---
