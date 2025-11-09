@@ -55,3 +55,19 @@ These projects range from web applications to CLI applications, all aimed at enh
 {{</columns>}}
 
 ---
+
+## Educations
+
+{{<columns>}}
+{{<image-field url="https://www.leokannercollege.nl/" img="/img/logo_lkc.png" label="Leo Kannercollege" text="High-school education" subtext="2010 - 2014">}}
+{{<image-field url="https://www.glu.nl/" img="/img/logo_glu.png" label="Grafisch Lyceum Utrecht" text="Game Developer" subtext="2015 - 2019">}}
+{{</columns>}}
+
+---
+
+## Work Experience
+
+{{<image-field url="https://www.appnovation.com/" img="/img/logo_wunderkraut.png" label="Wunderkraut" text="Associate Consultant, Technology" subtext="9 January 2019 - 1 January 2021">}}
+{{<image-field url="https://www.appnovation.com/" img="/img/logo_appnovation.png" label="Appnovation" text="Consultant, Technology" subtext="1 January 2021 - 2 January 2022">}}
+{{<image-field url="https://www.appnovation.com/" img="/img/logo_appnovation.png" label="Appnovation" text="Senior Consultant, Technology" subtext="2 January 2022 - 30 June 2023">}}
+{{<image-field url="https://www.iodigital.com/en" img="/img/logo_io.png" label="iO" text="Software Engineer" subtext="1 July 2023 - Present">}}

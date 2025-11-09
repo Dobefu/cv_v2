@@ -1,6 +1,7 @@
 .image-field {
   align-items: center;
   display: flex;
+  padding: var(--spacing-md) 0;
   gap: var(--spacing-md);
 }
 

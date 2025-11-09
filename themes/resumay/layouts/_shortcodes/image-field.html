@@ -1,14 +1,16 @@
-<a
-  class="image-field"
-  href="{{- .Params.url -}}"
-  rel="external"
-  target="_blank"
->
-  <img src="{{- .Params.img -}}" />
+<div>
+  <a
+    class="image-field"
+    href="{{- .Params.url -}}"
+    rel="external"
+    target="_blank"
+  >
+    <img src="{{- .Params.img -}}" />
 
-  <div>
-    <label>{{- .Params.label -}}</label>
-    <p>{{- .Params.text -}}</p>
-    <p>{{- .Params.subtext -}}</p>
-  </div>
-</a>
+    <div>
+      <label>{{- .Params.label -}}</label>
+      <p>{{- .Params.text -}}</p>
+      <p>{{- .Params.subtext -}}</p>
+    </div>
+  </a>
+</div>
