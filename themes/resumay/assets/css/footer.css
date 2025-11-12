@@ -3,6 +3,7 @@
   box-shadow: var(--shadow-lg);
   color: var(--color-footer-fg);
   padding: var(--spacing-xxl) var(--spacing-lg);
+  view-transition-name: footer;
 }
 
 .footer > .container {

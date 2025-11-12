@@ -13,6 +13,7 @@
   box-shadow: var(--shadow-lg);
   color: var(--color-content-fg);
   padding: var(--spacing-xl);
+  view-transition-name: main-content;
 }
 
 #main-content > .container > *:first-child {
