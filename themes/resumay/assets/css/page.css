@@ -16,6 +16,19 @@
   view-transition-name: main-content;
 }
 
+@media print {
+  #main-content {
+    padding: 0;
+  }
+
+  #main-content > .container {
+    background: #fff;
+    border-radius: 0;
+    box-shadow: none;
+    max-width: initial;
+  }
+}
+
 #main-content > .container > *:first-child {
   margin-block-start: 0;
 }
