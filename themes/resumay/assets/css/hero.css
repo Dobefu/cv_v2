@@ -17,6 +17,12 @@
   position: absolute;
 }
 
+@media print {
+  .hero .btn {
+    display: none;
+  }
+}
+
 .hero > .container {
   display: grid;
   grid-template-columns: 2fr 1fr;
