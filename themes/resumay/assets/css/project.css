@@ -1,0 +1,36 @@
+.project {
+  align-items: center;
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 45rem) {
+  .project {
+    flex-direction: column;
+  }
+}
+
+.project a {
+  text-decoration: none;
+}
+
+.project__image {
+  aspect-ratio: 16 / 9;
+  background: var(--color-footer-bg);
+  border-radius: var(--border-radius-md);
+  height: auto;
+  max-width: 100%;
+  width: 16rem;
+}
+
+.project__details {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.project__details h2,
+.project__details p {
+  margin: 0;
+}
