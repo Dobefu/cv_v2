@@ -18,13 +18,15 @@
 .project > .project__image,
 img.project__image {
   background: var(--color-footer-bg);
-  border-radius: var(--border-radius-md);
+  border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-sm);
+  overflow: hidden;
 }
 
 .project > .project__image > img,
 img.project__image {
   aspect-ratio: 16 / 9;
+  display: block;
   height: auto;
   max-width: 100%;
   transition: transform 0.2s ease-in-out;
