@@ -4,7 +4,8 @@
   gap: var(--spacing-sm);
 }
 
-.tag {
+.tag,
+a.tag {
   align-items: center;
   background: var(--color-tag-bg);
   border: 1px solid var(--color-tag-border);
@@ -12,9 +13,11 @@
   box-shadow: var(--shadow-md);
   color: var(--color-tag-fg);
   display: flex;
+  font-size: 0.9rem;
   gap: var(--spacing-sm);
   line-height: 1.2;
   padding: var(--spacing-xs) calc(var(--spacing-xs) * 3);
+  text-decoration: none;
 }
 
 .tag > svg {

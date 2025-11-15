@@ -57,6 +57,7 @@ img.project__image {
   align-items: end;
   display: flex;
   gap: var(--spacing-sm);
+  margin-block-end: var(--spacing-lg);
 }
 
 .repository > svg {

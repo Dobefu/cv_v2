@@ -38,4 +38,24 @@
 
     {{- .Params.repository -}}
   </a>
+
+  <div
+    class="tags"
+    style="view-transition-name: tags-{{- .File.UniqueID -}}"
+  >
+    {{- range .Params.Tags | sort -}}
+      <a class="tag" href="{{- printf "/tags/%s" . | relLangURL -}}">
+        {{- $iconPath := printf "static/icons/%s.svg" . -}}
+        {{- $iconContent := readFile $iconPath -}}
+
+        {{- if $iconContent -}}
+          {{- $iconContent | safeHTML -}}
+        {{- else -}}
+          {{- warnf "Icon %s not found" $iconPath -}}
+        {{- end -}}
+
+        {{- i18n (printf "tags.%s" .) -}}
+      </a>
+    {{- end -}}
+  </div>
 {{ end }}
