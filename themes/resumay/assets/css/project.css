@@ -15,17 +15,25 @@
   transform: scale(1.05);
 }
 
-.project__image {
+.project > .project__image,
+img.project__image {
   background: var(--color-footer-bg);
   border-radius: var(--border-radius-md);
 }
 
-.project__image > img {
+.project > .project__image > img,
+img.project__image {
   aspect-ratio: 16 / 9;
   height: auto;
   max-width: 100%;
   transition: transform 0.2s ease-in-out;
   width: 16rem;
+}
+
+img.project__image {
+  display: block;
+  margin-block: var(--spacing-xl);
+  width: 24rem;
 }
 
 .project__details {
@@ -42,4 +50,15 @@
 
 .project__details p {
   color: var(--color-fg);
+}
+
+.repository {
+  align-items: end;
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.repository > svg {
+  height: var(--spacing-lg);
+  width: var(--spacing-lg);
 }
