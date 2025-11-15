@@ -5,19 +5,21 @@
   {{ range .Pages }}
     <hr />
 
-    <section class="project">
-      {{- if .Params.imgSrc -}}
-        <img
-          alt="{{ .Params.imgAlt}}"
-          class="project__image"
-          src="{{ .Params.imgSrc }}"
-        />
-      {{- end -}}
+    <section>
+      <a class="project" href="{{ .RelPermalink }}">
+        {{- if .Params.imgSrc -}}
+          <img
+            alt="{{ .Params.imgAlt}}"
+            class="project__image"
+            src="{{ .Params.imgSrc }}"
+          />
+        {{- end -}}
 
-      <div class="project__details">
-        <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-        <p>{{- .Params.teaserText -}}</p>
-      </div>
+        <div class="project__details">
+          <h2>{{ .LinkTitle }}</h2>
+          <p>{{- .Params.teaserText -}}</p>
+        </div>
+      </a>
     </section>
   {{ end }}
 {{ end }}

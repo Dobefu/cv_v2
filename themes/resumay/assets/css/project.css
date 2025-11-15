@@ -2,16 +2,13 @@
   align-items: center;
   display: flex;
   gap: var(--spacing-md);
+  text-decoration: none;
 }
 
 @media (max-width: 45rem) {
   .project {
     flex-direction: column;
   }
-}
-
-.project a {
-  text-decoration: none;
 }
 
 .project__image {
@@ -33,4 +30,8 @@
 .project__details h2,
 .project__details p {
   margin: 0;
+}
+
+.project__details p {
+  color: var(--color-fg);
 }
