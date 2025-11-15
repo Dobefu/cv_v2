@@ -8,11 +8,12 @@
     <section>
       <a class="project" href="{{ .RelPermalink }}">
         {{- if .Params.imgSrc -}}
-          <img
-            alt="{{ .Params.imgAlt}}"
-            class="project__image"
-            src="{{ .Params.imgSrc }}"
-          />
+          <div class="project__image">
+            <img
+              alt="{{ .Params.imgAlt}}"
+              src="{{ .Params.imgSrc }}"
+            />
+          </div>
         {{- end -}}
 
         <div class="project__details">

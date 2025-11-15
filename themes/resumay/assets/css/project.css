@@ -11,12 +11,20 @@
   }
 }
 
+.project:hover > .project__image > img {
+  transform: scale(1.05);
+}
+
 .project__image {
-  aspect-ratio: 16 / 9;
   background: var(--color-footer-bg);
   border-radius: var(--border-radius-md);
+}
+
+.project__image > img {
+  aspect-ratio: 16 / 9;
   height: auto;
   max-width: 100%;
+  transition: transform 0.2s ease-in-out;
   width: 16rem;
 }
 
