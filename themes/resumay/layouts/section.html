@@ -1,8 +1,8 @@
-{{ define "main" }}
+{{- define "main" -}}
   <h1>{{ .Title }}</h1>
   <p>{{ .Content }}</p>
 
-  {{ range .Pages }}
+  {{- range .Pages -}}
     <hr />
 
     <section>
@@ -12,15 +12,25 @@
             <img
               alt="{{ .Params.imgAlt}}"
               src="{{ .Params.imgSrc }}"
+              style="view-transition-name: img-{{- .File.UniqueID -}}"
             />
           </div>
         {{- end -}}
 
         <div class="project__details">
-          <h2>{{ .LinkTitle }}</h2>
-          <p>{{- .Params.teaserText -}}</p>
+          <h2
+            style="view-transition-name: title-{{- .File.UniqueID -}}"
+          >
+            {{- .LinkTitle -}}
+          </h2>
+
+          <p
+            style="view-transition-name: teaser-{{- .File.UniqueID -}}"
+          >
+            {{- .Params.teaserText -}}
+          </p>
         </div>
       </a>
     </section>
-  {{ end }}
-{{ end }}
+  {{- end -}}
+{{- end -}}

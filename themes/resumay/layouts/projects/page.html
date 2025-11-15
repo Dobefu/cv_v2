@@ -1,0 +1,41 @@
+{{- define "hero" -}}
+  {{- partial "hero.html" . -}}
+{{- end -}}
+
+{{ define "main" }}
+  <h1
+    style="view-transition-name: title-{{- .File.UniqueID -}}"
+  >
+    {{- .Title -}}
+  </h1>
+
+  <img
+    alt="{{ .Params.imgAlt}}"
+    class="project__image"
+    src="{{ .Params.imgSrc }}"
+    style="view-transition-name: img-{{- .File.UniqueID -}}"
+  />
+
+  <p
+    style="view-transition-name: teaser-{{- .File.UniqueID -}}"
+  >
+    {{- .Params.teaserText -}}
+  </p>
+
+  <hr />
+
+  {{ .Content }}
+
+  <hr />
+
+  <a
+    class="repository"
+    href="{{- .Params.repository -}}"
+    rel="noopener noreferrer"
+    target="_blank"
+  >
+    {{- readFile "static/icons/github.svg" | safeHTML -}}
+
+    {{- .Params.repository -}}
+  </a>
+{{ end }}
