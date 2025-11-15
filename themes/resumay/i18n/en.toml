@@ -8,6 +8,19 @@
 [language-switcher]
   title = "Choose a language"
 
+[tags]
+  contentstack = "Contentstack"
+  cpp = "C++"
+  drupal = "Drupal"
+  hugo = "Hugo"
+  go = "Go"
+  nextjs = "NextJS"
+  nuxtjs = "NuxtJS"
+  php = "PHP"
+  tailwindcss = "TailwindCSS"
+  typescript = "TypeScript"
+  vuejs = "VueJS"
+
 [social-links]
   linkedin = "LinkedIn"
   github = "GitHub"
