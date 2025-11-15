@@ -28,6 +28,9 @@
     var(--color-primary) 45%,
     #000
   );
+  --color-tag-bg: #fafafa;
+  --color-tag-fg: #18181b;
+  --color-tag-border: #fff;
 
   --color-link: #0069a8;
   --color-link-visited: var(--color-link);
@@ -98,6 +101,9 @@
     --color-footer-fg: #fafafa;
     --color-footer-link-fg: #ceced2;
     --color-footer-border: #e5e7eb;
+    --color-tag-bg: #09090b;
+    --color-tag-fg: #fafafa;
+    --color-tag-border: #3f3f3f;
 
     --color-link: #00bcff;
     --color-link-visited: var(--color-link);

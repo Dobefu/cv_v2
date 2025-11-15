@@ -29,6 +29,23 @@
           >
             {{- .Params.teaserText -}}
           </p>
+
+          <div class="tags">
+            {{- range .Params.Tags | sort -}}
+              <span class="tag">
+                {{- $iconPath := printf "static/icons/%s.svg" . -}}
+                {{- $iconContent := readFile $iconPath -}}
+
+                {{- if $iconContent -}}
+                  {{- $iconContent | safeHTML -}}
+                {{- else -}}
+                  {{- warnf "Icon %s not found" $iconPath -}}
+                {{- end -}}
+
+                {{- i18n (printf "tags.%s" .) -}}
+              </span>
+            {{- end -}}
+          </div>
         </div>
       </a>
     </section>

@@ -19,6 +19,7 @@
 img.project__image {
   background: var(--color-footer-bg);
   border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
 }
 
 .project > .project__image > img,
