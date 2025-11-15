@@ -1,8 +1,56 @@
-{{ define "main" }}
+{{- define "main" -}}
   <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <p>{{ .Content }}</p>
 
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ end }}
-{{ end }}
+  {{- range .Pages -}}
+    <hr />
+
+    <section>
+      <a class="project" href="{{ .RelPermalink }}">
+        {{- if .Params.imgSrc -}}
+          <div class="project__image">
+            <img
+              alt="{{ .Params.imgAlt}}"
+              src="{{ .Params.imgSrc }}"
+              style="view-transition-name: img-{{- .File.UniqueID -}}"
+            />
+          </div>
+        {{- end -}}
+
+        <div class="project__details">
+          <h2
+            style="view-transition-name: title-{{- .File.UniqueID -}}"
+          >
+            {{- .LinkTitle -}}
+          </h2>
+
+          <p
+            style="view-transition-name: teaser-{{- .File.UniqueID -}}"
+          >
+            {{- .Params.teaserText -}}
+          </p>
+
+          <div
+            class="tags"
+            style="view-transition-name: tags-{{- .File.UniqueID -}}"
+          >
+            {{- range .Params.Tags | sort -}}
+              <span class="tag">
+                {{- $iconPath := printf "static/icons/%s.svg" . -}}
+                {{- $iconContent := readFile $iconPath -}}
+
+                {{- if $iconContent -}}
+                  {{- $iconContent | safeHTML -}}
+                {{- else -}}
+                  {{- warnf "Icon %s not found" $iconPath -}}
+                {{- end -}}
+
+                {{- i18n (printf "tags.%s" .) -}}
+              </span>
+            {{- end -}}
+          </div>
+        </div>
+      </a>
+    </section>
+  {{- end -}}
+{{- end -}}

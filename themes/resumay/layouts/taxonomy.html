@@ -1,7 +1,25 @@
-{{ define "main" }}
+{{- define "main" -}}
   <h1>{{ .Title }}</h1>
-  {{ .Content }}
-  {{ range .Pages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-  {{ end }}
-{{ end }}
+  <p>{{ .Content }}</p>
+
+  <hr />
+
+  <div class="tag-titles">
+    {{- range .Pages -}}
+      <a href="{{ .RelPermalink }}">
+        <h2 class="tag-titles__title">
+          {{- $iconPath := printf "static/icons/%s.svg" .Name -}}
+          {{- $iconContent := readFile $iconPath -}}
+
+          {{- if $iconContent -}}
+            {{- $iconContent | safeHTML -}}
+          {{- else -}}
+            {{- warnf "Icon %s not found" $iconPath -}}
+          {{- end -}}
+
+          {{- i18n (printf "tags.%s" .Name) -}}
+        </h2>
+      </a>
+    {{- end -}}
+  </div>
+{{- end -}}
