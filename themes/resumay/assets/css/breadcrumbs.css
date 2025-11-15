@@ -1,0 +1,29 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+  list-style: none;
+  margin-block: 0;
+  padding: 0;
+  view-transition-name: breadcrumbs;
+  z-index: 1;
+}
+
+.breadcrumbs:not(:empty) {
+  padding: var(--spacing-md);
+}
+
+a.crumb {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a.crumb::after {
+  color: var(--color-fg);
+  content: "/";
+  padding-inline-start: var(--spacing-md);
+}
+
+span.crumb {
+  color: var(--color-footer-link-fg);
+}

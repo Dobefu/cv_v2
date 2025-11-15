@@ -1,0 +1,37 @@
+{{- if gt (.Ancestors | len) 0 -}}
+  <ul
+    class="breadcrumbs container"
+    itemscope
+    itemtype="https://schema.org/BreadcrumbList"
+  >
+    {{- $data := newScratch -}}
+
+    {{- range $index, $value := .Ancestors.Reverse -}}
+      <li
+        itemprop="itemListElement"
+        itemscope
+        itemtype="https://schema.org/ListItem"
+      >
+        {{- $data.Set "counter" $index -}}
+        {{- $data.Add "counter" 1 -}}
+
+        <a class="crumb" href="{{- .Permalink -}}" itemprop="item">
+          <span itemprop="name">{{- .LinkTitle -}}</span>
+        </a>
+
+        <meta itemprop="position" content='{{- $data.Get "counter"}}' />
+      </li>         
+    {{- end -}}
+
+    <li
+      itemprop="itemListElement"
+      itemscope
+      itemtype="https://schema.org/ListItem"
+    >
+      {{- $data.Add "counter" 1 -}}
+
+      <span class="crumb" itemprop="name">{{- .LinkTitle -}}</span>
+      <meta itemprop="position" content='{{- $data.Get "counter" -}}' />
+    </li>
+  </ul>
+{{- end -}}
