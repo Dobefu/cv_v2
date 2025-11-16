@@ -3,13 +3,40 @@
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "Person",
+        "@id": "{{ site.BaseURL }}#person",
+        "name": "Connor van Spronssen",
+        "url": "{{ site.BaseURL }}",
+        "image": "{{ site.BaseURL }}avatar-transparent.png",
+        "jobTitle": "Full-stack Web Engineer",
+        "email": "info@dobefu.com",
+        "sameAs": [
+          {{- $socialLinks := site.Params.socialLinks -}}
+          {{- $links := slice -}}
+
+          {{- if $socialLinks.linkedin }}{{ $links = $links | append $socialLinks.linkedin }}{{ end -}}
+          {{- if $socialLinks.github }}{{ $links = $links | append $socialLinks.github }}{{ end -}}
+          {{- if $socialLinks.gitlab }}{{ $links = $links | append $socialLinks.gitlab }}{{ end -}}
+          {{- if $socialLinks.bluesky }}{{ $links = $links | append $socialLinks.bluesky }}{{ end -}}
+          {{- if $socialLinks.drupal }}{{ $links = $links | append $socialLinks.drupal }}{{ end -}}
+
+          {{- range $i, $link := $links -}}
+            {{- if gt $i 0 }},{{ end -}}
+            "{{ $link }}"
+          {{- end -}}
+        ]
+      },
+      {
         "@type": "WebSite",
         "@id": "{{ site.BaseURL }}#website",
         "url": "{{ site.BaseURL }}",
         "name": "{{ site.Title }}",
         "description": "{{ site.Params.description }}",
         "publisher": {
-          "@id": "{{ site.BaseURL }}#organization"
+          "@id": "{{ site.BaseURL }}#person"
+        },
+        "author": {
+          "@id": "{{ site.BaseURL }}#person"
         }
       }
     ]
