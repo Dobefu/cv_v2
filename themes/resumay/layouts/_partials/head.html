@@ -18,6 +18,9 @@
     {{- $imagePath = .Params.image -}}
   {{- end -}}
 
+  {{- $imageWidth := "" -}}
+  {{- $imageHeight := "" -}}
+
   {{- if $imagePath -}}
     {{- $assetPath := strings.TrimPrefix "/" $imagePath -}}
     {{- $imgResource := resources.Get $assetPath -}}
@@ -25,6 +28,8 @@
     {{- if $imgResource -}}
       {{- $resized := $imgResource.Resize "1200x630" -}}
       {{- $image = $resized.Permalink -}}
+      {{- $imageWidth = "1200" -}}
+      {{- $imageHeight = "630" -}}
     {{- else -}}
       {{- $image = $imagePath | absURL -}}
     {{- end -}}
@@ -95,6 +100,23 @@
 
   {{- $imageAlt := cond .IsHome (default "Connor van Spronssen" .Params.heroImgAlt) (default .Title .Params.imgAlt) -}}
   <meta property="og:image:alt" content="{{ $imageAlt }}">
+
+  {{- if $imageWidth -}}
+    <meta property="og:image:width" content="{{ $imageWidth }}">
+    <meta property="og:image:height" content="{{ $imageHeight }}">
+  {{- end -}}
+
+  {{- if not .IsHome -}}
+    {{- if .PublishDate -}}
+      <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{- end -}}
+
+    {{- if .Lastmod -}}
+      <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{- end -}}
+
+    <meta property="article:author" content="{{ site.BaseURL }}#person">
+  {{- end -}}
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ $title }}">
