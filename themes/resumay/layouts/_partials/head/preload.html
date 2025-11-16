@@ -1,0 +1,11 @@
+{{- if .Params.heroBgURL -}}
+  <link fetchpriority="high" rel="preload" href="{{- .Params.heroBgURL -}}" as="image" />
+{{- end -}}
+
+{{- if .Params.heroImgURL -}}
+  <link fetchpriority="high" rel="preload" href="{{- .Params.heroImgURL -}}" as="image" />
+{{- end -}}
+
+{{- if .Params.imgSrc -}}
+  <link fetchpriority="high" rel="preload" href="{{- .Params.imgSrc -}}" as="image" />
+{{- end -}}

@@ -5,6 +5,8 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="apple-touch-icon" href="/favicon.ico">
 
+  {{- partial "head/preload.html" . -}}
+
   {{- $title := cond .IsHome .Title (printf "%s | %s" .Title site.Title) -}}
   {{- $description := .Description | default site.Params.description -}}
   {{- $image := "/favicon.ico" | absURL -}}
