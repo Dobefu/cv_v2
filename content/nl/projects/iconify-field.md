@@ -10,7 +10,7 @@ draft = false
 
 [params]
     teaserText = 'Een Drupal module die onder andere een veld levert waarmee een icoon geselecteerd kan worden. Deze module heeft een submodule met CKEditor 5 integratie, waarmee content editors direct iconen in hun WYSIWYG editor kunnen invoegen.'
-    repository = 'https://github.com/Dobefu/iconify_field'
+    repository = 'https://git.drupalcode.org/project/iconify_field'
     imgAlt = 'Schermafbeelding van de Iconify Field icon picker'
     imgSrc = '/projects/iconify-field.png'
 +++
