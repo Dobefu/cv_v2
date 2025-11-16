@@ -7,7 +7,14 @@
     role="img"
     target="_blank"
   >
-    <img alt="{{- .Params.alt -}}" src="{{- .Params.img -}}" />
+    {{- $imgResource := resources.Get (strings.TrimPrefix "/" .Params.img) -}}
+    {{- $image := .Params.img | absURL -}}
+
+    {{- if $imgResource -}}
+      {{- $image = ($imgResource.Resize "200x200").Permalink -}}
+    {{- end -}}
+
+    <img alt="{{- .Params.alt -}}" src="{{- $image -}}" />
 
     <div>
       <label>{{- .Params.label -}}</label>
