@@ -3,7 +3,11 @@
     <div class="header__inner">
       <a href="{{- "/" | relLangURL -}}">
         <h1 class="header__title">
-          <img aria-hidden="true" src="/logo-white.svg" />
+          <img
+            alt="{{- i18n "header.logoAlt" -}}"
+            aria-hidden="true"
+            src="/logo-white.svg"
+          />
 
           {{- site.Title -}}
         </h1>
