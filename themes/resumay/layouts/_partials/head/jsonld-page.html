@@ -13,12 +13,12 @@
         "wordCount": {{ .page.WordCount }},
         "timeRequired": "PT{{ .page.ReadingTime }}M",
         "author": {
-          "@type": "Organization",
-          "@id": "{{ site.BaseURL }}#organization"
+          "@type": "Person",
+          "@id": "{{ site.BaseURL }}#person"
         },
         "publisher": {
-          "@type": "Organization",
-          "@id": "{{ site.BaseURL }}#organization"
+          "@type": "Person",
+          "@id": "{{ site.BaseURL }}#person"
         },
         "isPartOf": {
           "@id": "{{ site.BaseURL }}#website"
@@ -57,7 +57,7 @@
         "url": "{{ site.BaseURL }}",
         "name": "{{ site.Title }}",
         "publisher": {
-          "@id": "{{ site.BaseURL }}#organization"
+          "@id": "{{ site.BaseURL }}#person"
         }
       }
     ]

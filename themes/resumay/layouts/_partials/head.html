@@ -16,6 +16,40 @@
   <link rel="canonical" href="{{ .Permalink }}">
   <link rel="manifest" href="{{ .Site.BaseURL }}manifest.webmanifest">
 
+  {{- range $lang := site.Languages -}}
+    {{- $translation := false -}}
+
+    {{- range $.Translations -}}
+      {{- if eq .Lang $lang.Lang -}}
+        {{- $translation = . -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if $translation -}}
+      <link
+        rel="alternate"
+        hreflang="{{ $translation.Lang }}"
+        href="{{ $translation.Permalink }}"
+      >
+    {{- else if eq $lang.Lang $.Lang -}}
+      <link
+        rel="alternate"
+        hreflang="{{ $lang.Lang }}"
+        href="{{ $.Permalink }}"
+      >
+    {{- else -}}
+      {{- $basePath := strings.TrimPrefix (printf "/%s" $.Lang) $.RelPermalink -}}
+
+      <link
+        rel="alternate"
+        hreflang="{{ $lang.Lang }}"
+        href="{{ printf "%s%s%s" $.Site.BaseURL $lang.Lang $basePath }}"
+      >
+    {{- end -}}
+  {{- end -}}
+
+  <link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+
   {{- with .OutputFormats.Get "rss" -}}
     {{- printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML -}}
   {{- end -}}
@@ -25,8 +59,18 @@
   <meta property="og:type" content="{{ if .IsHome }}website{{ else }}article{{ end }}">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:locale" content="{{ .Site.LanguageCode }}">
+
+  {{- range site.Languages -}}
+    {{- if ne .Lang $.Site.Language.Lang -}}
+      <meta property="og:locale:alternate" content="{{ .Lang }}">
+    {{- end -}}
+  {{- end -}}
+
   <meta property="og:site_name" content="{{ site.Title }}">
   <meta property="og:image" content="{{ $image }}">
+
+  {{- $imageAlt := cond .IsHome (default "Connor van Spronssen" .Params.heroImgAlt) (default .Title .Params.imgAlt) -}}
+  <meta property="og:image:alt" content="{{ $imageAlt }}">
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ $title }}">
