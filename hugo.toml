@@ -17,7 +17,7 @@ printUnusedTemplates = true
 
 [params]
   shortName = 'CV'
-  description = ''
+  description = 'Connor van Spronssen - Full-stack web engineer specializing in PHP, TypeScript, Go, Drupal, NextJS, and modern web development. Explore my projects, skills, and experience.'
   backgroundColor = 'oklch(.92 .004 286.32)'
   themeColor = '#0d6488'
 
