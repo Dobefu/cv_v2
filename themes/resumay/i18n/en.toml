@@ -4,6 +4,10 @@
 [skip-link]
   title = "Skip to main content"
 
+[flag]
+  en = "English flag"
+  nl = "Dutch flag"
+
 [language]
   en = "English"
   nl = "Dutch"

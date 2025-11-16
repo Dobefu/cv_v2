@@ -4,6 +4,7 @@
     title="{{- i18n (printf "language.%s" .Language.Lang) -}}"
   >
     <img
+      alt="{{- i18n (printf "flag.%s" .Language.Lang) -}}"
       aria-hidden="true"
       class="language-switcher__icon"
       src="/flags/{{- .Language.Lang -}}.svg"
@@ -25,6 +26,7 @@
           title="{{- i18n (printf "language.%s" .Language.Lang) -}}"
         >
           <img
+            alt="{{- i18n (printf "flag.%s" .Language.Lang) -}}"
             aria-hidden="true"
             class="language-switcher__icon"
             src="/flags/{{- .Language.Lang -}}.svg"
