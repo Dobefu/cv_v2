@@ -1,11 +1,10 @@
 <div>
   <a
-    aria-hidden="true"
     class="image-field"
     href="{{- .Params.url -}}"
     rel="external"
-    role="img"
     target="_blank"
+    title="{{- .Params.label -}}"
   >
     {{- $imgResource := resources.Get (strings.TrimPrefix "/" .Params.img) -}}
     {{- $image := .Params.img | absURL -}}
@@ -14,7 +13,7 @@
       {{- $image = ($imgResource.Resize "200x200").Permalink -}}
     {{- end -}}
 
-    <img alt="{{- .Params.alt -}}" src="{{- $image -}}" />
+    <img alt="{{- .Params.alt -}}" aria-hidden="true" src="{{- $image -}}" />
 
     <div>
       <label>{{- .Params.label -}}</label>
