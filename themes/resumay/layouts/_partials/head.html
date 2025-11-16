@@ -35,7 +35,10 @@
   <meta name="description" content="{{ $description }}">
 
   <link rel="canonical" href="{{ .Permalink }}">
-  <link rel="manifest" href="{{ .Site.BaseURL }}manifest.webmanifest">
+
+  {{- with .OutputFormats.Get "webappmanifest" -}}
+    <link rel="manifest" href="{{ .Permalink }}">
+  {{- end -}}
 
   {{- range $lang := site.Languages -}}
     {{- $translation := false -}}
