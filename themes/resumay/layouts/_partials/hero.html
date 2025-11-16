@@ -1,7 +1,7 @@
 {{- if .Params.hero -}}
   <div
     class="hero"
-    style="--bg-img: url('{{- .Params.heroBg -}}')"
+    style="--bg-img: url('{{- .Params.heroBgURL -}}')"
   >
     <div class="container">
       <div class="hero__info">
@@ -22,11 +22,12 @@
         {{- end -}}
       </div>
 
-      {{- if .Params.heroImg -}}
+      {{- if .Params.heroImgURL -}}
         <img
+          alt="{{- .Params.heroImgAlt -}}"
           aria-hidden="true"
           class="hero__img"
-          src="{{- .Params.heroImg -}}"
+          src="{{- .Params.heroImgURL -}}"
         />
       {{- end -}}
     </div>

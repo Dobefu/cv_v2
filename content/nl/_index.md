@@ -7,10 +7,11 @@ draft = false
 
 [params]
     hero = true
-    heroBg = "/hero.jpg"
+    heroBgURL = "/hero.jpg"
     heroTitle = "Connor van Spronssen"
     heroSubtitle = "Full-stack web engineer"
-    heroImg = "/avatar-transparent.png"
+    heroImgAlt = "Connor van Spronssen"
+    heroImgURL = "/avatar-transparent.png"
     heroCtaText = "Verken mijn projecten"
     heroCtaURl = "/projects"
 +++
