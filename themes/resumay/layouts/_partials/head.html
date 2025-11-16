@@ -7,7 +7,26 @@
 
   {{- $title := cond .IsHome .Title (printf "%s | %s" .Title site.Title) -}}
   {{- $description := .Description | default site.Params.description -}}
-  {{- $image := .Params.image | default "/favicon.ico" | absURL -}}
+  {{- $image := "/favicon.ico" | absURL -}}
+  {{- $imagePath := "" -}}
+
+  {{- if .Params.imgSrc -}}
+    {{- $imagePath = .Params.imgSrc -}}
+  {{- else if .Params.image -}}
+    {{- $imagePath = .Params.image -}}
+  {{- end -}}
+
+  {{- if $imagePath -}}
+    {{- $assetPath := strings.TrimPrefix "/" $imagePath -}}
+    {{- $imgResource := resources.Get $assetPath -}}
+
+    {{- if $imgResource -}}
+      {{- $resized := $imgResource.Resize "1200x630" -}}
+      {{- $image = $resized.Permalink -}}
+    {{- else -}}
+      {{- $image = $imagePath | absURL -}}
+    {{- end -}}
+  {{- end -}}
 
 
   <title>{{ $title }}</title>

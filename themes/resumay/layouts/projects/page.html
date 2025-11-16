@@ -9,10 +9,17 @@
     {{- .Title -}}
   </h1>
 
+  {{- $imgResource := resources.Get (strings.TrimPrefix "/" .Params.imgSrc) -}}
+  {{- $image := .Params.imgSrc | absURL -}}
+
+  {{- if $imgResource -}}
+    {{- $image = ($imgResource.Resize "768x432").Permalink -}}
+  {{- end -}}
+
   <img
     alt="{{ .Params.imgAlt}}"
     class="project__image"
-    src="{{ .Params.imgSrc }}"
+    src="{{ $image }}"
     style="view-transition-name: img-{{- .File.UniqueID -}}"
   />
 
