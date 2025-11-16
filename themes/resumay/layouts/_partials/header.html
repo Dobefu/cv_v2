@@ -2,7 +2,7 @@
   <div class="container">
     <div class="header__inner">
       <a href="{{- "/" | relLangURL -}}">
-        <h1 class="header__title">
+        <span class="header__title">
           <img
             alt="{{- i18n "header.logoAlt" -}}"
             aria-hidden="true"
@@ -10,7 +10,7 @@
           />
 
           {{- site.Title -}}
-        </h1>
+        </span>
       </a>
 
       {{- partial "language-switcher.html" . -}}
