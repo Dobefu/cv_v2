@@ -1,0 +1,73 @@
++++
+title = 'Contentstack Bridge (CSB)'
+linkTitle = 'Contentstack Bridge (CSB)'
+description = 'Adds a layer between your application and Contentstack, to provide some much-needed conveniences. Built in response to challenges I had working with the Contentstack API.'
+tags = ['go', 'contentstack']
+date = '2025-02-01T17:14:48+01:00'
+lastmod = '2025-11-12T17:14:48+01:00'
+weight = 0
+draft = false
+
+[params]
+    teaserText = 'Adds a layer between your application and Contentstack, to provide some much-needed conveniences. It has been built in response to challenged I had whilst working with the Contentstack API.'
+    repository = 'https://github.com/Dobefu/csb'
+    imgAlt = 'Logo of the Contentstack Bridge project'
+    imgSrc = '/projects/csb.png'
++++
+
+## What is Contentstack?
+
+[Contentstack](https://www.contentstack.com/platforms/headless-cms) is an API-first headless SaaS content management system (CMS).
+For content editors, this provides an interface where content can
+be modeled and managed separate from the presentation layer, or frontend.
+Developers can use either a REST or a GraphQL API to retrieve this content.
+
+## Limitations of Contentstack
+
+The Contentstack APIs (both REST and GraphQL) have some
+serious limitations in what they can and cannot do.
+
+- When querying a content entry, the content type has to be provided
+- It is not possible to query all the published locales for a content entry
+- Though there are "URL" fields in Contentstack, these are actually slugs, since pages cannot have parent pages
+  - This makes it impossible to nest pages in Contentstack in a way that is intuitive for content editors
+
+These limitations make it very difficult to use the API to create a performant website.
+Because of these limitations, there needs to be some
+middleware layer between Contentstack and the website you want to create.
+This is where the Contentstack Bridge comes in.
+
+## Contentstack Bridge
+
+The Contentstack Bridge has been created to tackle these exact problems.
+It serves as a middleware between Contentstack and an application,
+to provide the best developer experience possible.
+A subset of all content entries are stored in its own database,
+in a way that any content entry can be retrieved without needing to specify the content type.
+A developer can choose to either query it directly from the database,
+or through the built-in [API server](https://dobefu.github.io/csb/api-server/index.html).
+The content entry in the response will always include all alternative locales for the entry,
+allowing it to easily be added to the HTML metadata in the website.
+
+To populate the database, a [synchronization](https://www.contentstack.com/docs/developers/apis/content-delivery-api#synchronization) needs to be done.
+The first synchronization will fetch and process all content entries,
+and all subsequent calls will use the synchronization token to continue from the last sync.
+This synchronization action can be triggered in a [webhook](https://www.contentstack.com/docs/developers/set-up-webhooks/about-webhooks) to keep the data up-to-date.
+
+Parent pages are also supported in the Contentstack Bridge, by adding a "parent" field to a content entry.
+This can be added manually, or through the [CLI](https://dobefu.github.io/csb/cli/index.html).
+When performing a sync, the Contentstack Bridge will recursively
+look up these parent pages and construct a full URL from it.
+This is what makes it possible to query a content entry by its full URL,
+whilst providing content editors with an intuitive way to nest pages.
+As an additional bonus, it also means that changing the slug of a parent page
+will update this segment of the full URL for all child entries.
+
+## Implementation Example
+
+In order to test the Contentstack Bridge, I have created a
+reference implementation, called the Contentstack Bridge - NextJS Example.
+This has a separate [GitHub repository](https://github.com/Dobefu/csb-example-nextjs).
+This project provides a complete implementation of a basic website with features
+like multiple languages, sitemaps, locale switching with localized URLs,
+metadata, live preview and editing, and much more.
