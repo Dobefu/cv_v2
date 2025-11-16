@@ -9,3 +9,31 @@
 {{- if .Params.imgSrc -}}
   <link fetchpriority="high" rel="preload" href="{{- .Params.imgSrc -}}" as="image" />
 {{- end -}}
+
+{{- $cssFiles := resources.Match "css/**.css" -}}
+
+{{- if $cssFiles -}}
+  {{- $cssBundle := $cssFiles | resources.Concat "css/style.css" -}}
+
+  {{- if hugo.IsDevelopment -}}
+    {{- range $cssFiles -}}
+      <link
+        fetchpriority="high"
+        rel="preload"
+        href="{{- .RelPermalink -}}"
+        as="style"
+      >
+    {{- end -}}
+  {{- else -}}
+    {{- with $cssBundle | minify | fingerprint -}}
+      <link
+        fetchpriority="high"
+        rel="preload"
+        href="{{- .RelPermalink -}}"
+        integrity="{{- .Data.Integrity -}}"
+        crossorigin="anonymous"
+        as="style"
+      >
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
