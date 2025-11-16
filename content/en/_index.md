@@ -115,4 +115,4 @@ These projects range from web applications to CLI applications, all aimed at enh
 
 ## Certifications
 
-{{<image-field url="https://dev.acquia.com/person/community/connor-van-spronssen" img="/img/cert_drupal9.png" label="Acquia Certified Developer" text="Drupal 9" subtext="Certified on 7 December 2022">}}
+{{<image-field url="https://dev.acquia.com/person/community/connor-van-spronssen" img="/img/cert_drupal9.png" alt="Acquia Certified Developer logo" label="Acquia Certified Developer" text="Drupal 9" subtext="Certified on 7 December 2022">}}

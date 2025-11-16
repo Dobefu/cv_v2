@@ -115,4 +115,4 @@ Deze projecten variëren van webapplicaties tot CLI-toepassingen, om mijn expert
 
 ## Certificeringen
 
-{{<image-field url="https://dev.acquia.com/person/community/connor-van-spronssen" img="/img/cert_drupal9.png" label="Acquia Certified Developer" text="Drupal 9" subtext="Gecertificeerd op 7 december 2022">}}
+{{<image-field url="https://dev.acquia.com/person/community/connor-van-spronssen" img="/img/cert_drupal9.png" alt="Acquia Certified Developer logo" label="Acquia Certified Developer" text="Drupal 9" subtext="Gecertificeerd op 7 december 2022">}}
