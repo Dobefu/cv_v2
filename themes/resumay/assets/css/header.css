@@ -15,7 +15,7 @@
 }
 
 .header + * {
-  margin-block-start: 6rem;
+  margin-block-start: 7rem;
 }
 
 .header + .hero {
