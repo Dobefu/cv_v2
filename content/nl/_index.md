@@ -101,8 +101,8 @@ Deze projecten variëren van webapplicaties tot CLI-toepassingen, om mijn expert
 {{<progress-bar label="VueJS" percentage="80">}}
 {{<progress-bar label="NuxtJS" percentage="80">}}
 {{<progress-bar label="Drupal 7" percentage="75">}}
-{{<progress-bar label="Unity3D" percentage="70">}}
 {{<progress-bar label="Hugo" percentage="70">}}
+{{<progress-bar label="Unity3D" percentage="65">}}
 
 ### Overige Vaardigheden
 

@@ -101,8 +101,8 @@ These projects range from web applications to CLI applications, all aimed at enh
 {{<progress-bar label="VueJS" percentage="80">}}
 {{<progress-bar label="NuxtJS" percentage="80">}}
 {{<progress-bar label="Drupal 7" percentage="75">}}
-{{<progress-bar label="Unity3D" percentage="70">}}
 {{<progress-bar label="Hugo" percentage="70">}}
+{{<progress-bar label="Unity3D" percentage="65">}}
 
 ### Miscellaneous Skills
 
