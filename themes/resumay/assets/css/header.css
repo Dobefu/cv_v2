@@ -27,6 +27,7 @@
 
 @media (max-width: 45rem) {
   .header__inner {
+    gap: var(--spacing-sm);
     padding: var(--spacing-md);
   }
 }
@@ -53,7 +54,11 @@
 
 @media (max-width: 45rem) {
   .header__title {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
+  }
+
+  .header__title > img {
+    height: var(--spacing-xxl);
   }
 }
 
