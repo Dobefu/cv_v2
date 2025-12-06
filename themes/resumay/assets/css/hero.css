@@ -61,6 +61,14 @@
 }
 
 @media (max-width: 45rem) {
+  .hero__info h1 {
+    font-size: 2rem;
+  }
+
+  .hero__info h2 {
+    font-size: 1.25rem;
+  }
+
   .hero__img {
     height: 12rem;
     margin-inline-end: 0;
