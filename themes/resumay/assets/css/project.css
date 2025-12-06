@@ -1,5 +1,6 @@
 .project {
   align-items: center;
+  break-inside: avoid;
   display: flex;
   gap: var(--spacing-md);
   text-decoration: none;

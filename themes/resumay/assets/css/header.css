@@ -8,18 +8,22 @@
   z-index: 10;
 }
 
-@media print {
-  .header {
-    display: none;
-  }
-}
-
 .header + * {
   margin-block-start: 7rem;
 }
 
 .header + .hero {
   margin-block-start: 0;
+}
+
+@media print {
+  .header {
+    display: none;
+  }
+
+  .header + * {
+    margin-block-start: 0;
+  }
 }
 
 .header__inner {
