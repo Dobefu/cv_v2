@@ -16,6 +16,16 @@
   view-transition-name: main-content;
 }
 
+@media (max-width: 45rem) {
+  #main-content > .container {
+    padding: var(--spacing-lg);
+  }
+
+  #main-content > .container > h1:first-child {
+    text-align: center;
+  }
+}
+
 @media print {
   #main-content {
     padding: 0;

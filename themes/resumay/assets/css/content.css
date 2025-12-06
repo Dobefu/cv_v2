@@ -30,6 +30,12 @@ hr {
   margin-block: var(--spacing-xl);
 }
 
+@media (max-width: 45rem) {
+  hr {
+    margin-block: var(--spacing-lg);
+  }
+}
+
 math {
   text-align: start;
   margin-block-end: var(--spacing-md);
