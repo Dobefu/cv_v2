@@ -96,7 +96,9 @@ These projects range from web applications to CLI applications, all aimed at enh
 ### Technologies
 
 {{<progress-bar label="Drupal 8 / 9 / 10 / 11" percentage="90">}}
+{{<progress-bar label="ReactJS" percentage="85">}}
 {{<progress-bar label="NextJS" percentage="85">}}
+{{<progress-bar label="VueJS" percentage="80">}}
 {{<progress-bar label="NuxtJS" percentage="80">}}
 {{<progress-bar label="Drupal 7" percentage="75">}}
 {{<progress-bar label="Unity3D" percentage="70">}}
