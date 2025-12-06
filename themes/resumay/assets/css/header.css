@@ -25,6 +25,12 @@
   position: relative;
 }
 
+@media (max-width: 45rem) {
+  .header__inner {
+    padding: var(--spacing-md);
+  }
+}
+
 .header__inner::before {
   backdrop-filter: blur(1rem);
   border-radius: inherit;
@@ -43,6 +49,12 @@
 
 .header__title > img {
   height: 3rem;
+}
+
+@media (max-width: 45rem) {
+  .header__title {
+    font-size: 1.25rem;
+  }
 }
 
 .header h1 {

@@ -20,6 +20,7 @@
 @media (max-width: 45rem) {
   .language-switcher__button {
     font-size: 0;
+    gap: var(--spacing-xs);
   }
 }
 
