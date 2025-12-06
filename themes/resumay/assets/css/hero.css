@@ -4,7 +4,6 @@
   background-position: 50%;
   display: flex;
   margin-block-end: -2.75rem;
-  margin-block-start: -8rem;
   min-height: 32rem;
   position: relative;
 }
@@ -27,7 +26,6 @@
 @media (max-width: 45rem) {
   .hero > .container {
     grid-template-columns: 1fr;
-    padding-block-start: 8rem;
   }
 }
 

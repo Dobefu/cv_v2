@@ -2,8 +2,9 @@
   inset-block-start: 0;
   line-height: 1;
   padding: 0 var(--spacing-md);
-  position: sticky;
+  position: fixed;
   view-transition-name: header;
+  width: 100%;
   z-index: 10;
 }
 
@@ -11,6 +12,14 @@
   .header {
     display: none;
   }
+}
+
+.header + * {
+  margin-block-start: 6rem;
+}
+
+.header + .hero {
+  margin-block-start: 0;
 }
 
 .header__inner {
