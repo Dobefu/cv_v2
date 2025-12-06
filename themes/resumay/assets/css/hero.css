@@ -82,13 +82,16 @@
 
 @media print {
   .hero {
-    border-block-end: 1px solid var(--color-hr);
+    background: none;
+    border-block-end: 1mm solid var(--color-hr);
     margin-block-end: 0;
-    min-height: 24rem;
+    min-height: 16rem;
   }
 
   .hero > .container {
-    padding-block-end: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-block: 0;
   }
 
   .hero .btn {
@@ -97,6 +100,10 @@
 
   .hero::before {
     background: white;
+  }
+
+  .hero__info {
+    margin-block-end: auto;
   }
 
   .hero__info * {

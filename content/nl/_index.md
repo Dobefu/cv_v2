@@ -46,7 +46,7 @@ Voel je vrij om mijn persoonlijke Neovim-configuratie op [GitHub](https://github
 Ik maak ook diverse [persoonlijke projecten](/projects) in mijn vrije tijd om mijn vaardigheden te blijven verbeteren.
 Deze projecten variëren van webapplicaties tot CLI-toepassingen, om mijn expertise en praktijkervaring in het vakgebied te verbeteren.
 
----
+{{<page-break>}}
 
 ## Contact
 
@@ -64,7 +64,7 @@ Deze projecten variëren van webapplicaties tot CLI-toepassingen, om mijn expert
 {{<image-field url="https://www.glu.nl/" img="/img/logo_glu.png" alt="Grafisch Lyceum Utrecht logo" label="Grafisch Lyceum Utrecht" text="Game Developer" subtext="2015 - 2019">}}
 {{</columns>}}
 
----
+{{<page-break>}}
 
 ## Werkervaring
 
@@ -73,7 +73,7 @@ Deze projecten variëren van webapplicaties tot CLI-toepassingen, om mijn expert
 {{<image-field url="https://www.appnovation.com/" img="/img/logo_appnovation.png" alt="Appnovation logo" label="Appnovation" text="Senior Consultant, Technology" subtext="2 januari 2022 - 30 juni 2023">}}
 {{<image-field url="https://www.iodigital.com/en" img="/img/logo_io.png" alt="iO logo" label="iO" text="Software Engineer" subtext="1 juli 2023 - Heden">}}
 
----
+{{<page-break>}}
 
 ## Vaardigheden
 
@@ -113,7 +113,7 @@ Deze projecten variëren van webapplicaties tot CLI-toepassingen, om mijn expert
 {{<progress-bar label="Networking" percentage="75">}}
 {{<progress-bar label="Ansible" percentage="70">}}
 
----
+{{<page-break>}}
 
 ## Certificeringen
 

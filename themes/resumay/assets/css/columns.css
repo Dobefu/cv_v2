@@ -1,4 +1,5 @@
 .columns {
+  break-inside: avoid;
   display: flex;
   gap: var(--spacing-md);
 }

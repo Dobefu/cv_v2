@@ -1,0 +1,9 @@
+.page-break {
+  break-after: page;
+}
+
+@media print {
+  .page-break {
+    visibility: hidden;
+  }
+}

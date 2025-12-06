@@ -46,7 +46,7 @@ Feel free to explore my personal Neovim configuration on [GitHub](https://github
 I also create various [personal projects](/projects) in my spare time to keep learning and improving my skills.
 These projects range from web applications to CLI applications, all aimed at enhancing my expertise and practical experience in the field.
 
----
+{{<page-break>}}
 
 ## Contact
 
@@ -64,7 +64,7 @@ These projects range from web applications to CLI applications, all aimed at enh
 {{<image-field url="https://www.glu.nl/" img="/img/logo_glu.png" alt="Grafisch Lyceum Utrecht logo" label="Grafisch Lyceum Utrecht" text="Game Developer" subtext="2015 - 2019">}}
 {{</columns>}}
 
----
+{{<page-break>}}
 
 ## Work Experience
 
@@ -73,7 +73,7 @@ These projects range from web applications to CLI applications, all aimed at enh
 {{<image-field url="https://www.appnovation.com/" img="/img/logo_appnovation.png" alt="Appnovation logo" label="Appnovation" text="Senior Consultant, Technology" subtext="2 January 2022 - 30 June 2023">}}
 {{<image-field url="https://www.iodigital.com/en" img="/img/logo_io.png" alt="iO logo" label="iO" text="Software Engineer" subtext="1 July 2023 - Present">}}
 
----
+{{<page-break>}}
 
 ## Skills
 
@@ -113,7 +113,7 @@ These projects range from web applications to CLI applications, all aimed at enh
 {{<progress-bar label="Networking" percentage="75">}}
 {{<progress-bar label="Ansible" percentage="70">}}
 
----
+{{<page-break>}}
 
 ## Certifications
 

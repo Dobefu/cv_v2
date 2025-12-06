@@ -1,4 +1,5 @@
 .progress-bar {
+  break-inside: avoid;
   padding: var(--spacing-sm) 0;
 }
 

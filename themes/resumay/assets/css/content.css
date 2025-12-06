@@ -26,6 +26,7 @@ ul > li::marker {
 hr {
   background: var(--color-hr);
   border-style: none;
+  break-after: auto;
   height: 1px;
   margin-block: var(--spacing-xl);
 }
