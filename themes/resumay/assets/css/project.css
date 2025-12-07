@@ -69,13 +69,14 @@ img.project__image {
 }
 
 .repository {
-  align-items: end;
+  align-items: center;
   display: flex;
   gap: var(--spacing-sm);
   margin-block-end: var(--spacing-lg);
 }
 
 .repository > svg {
+  flex-shrink: 0;
   height: var(--spacing-lg);
   width: var(--spacing-lg);
 }
