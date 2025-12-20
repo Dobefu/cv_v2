@@ -13,7 +13,7 @@ draft = false
     heroImgAlt = "Connor van Spronssen"
     heroImgURL = "/avatar-transparent.png"
     heroCtaText = "Verken mijn projecten"
-    heroCtaURl = "/projects"
+    heroCtaURl = "/projects/"
 +++
 
 ## Over Mij
@@ -43,7 +43,7 @@ Mijn workflow wordt sterk beïnvloed door mijn toewijding aan efficiëntie en ma
 Daarom gebruik ik [Neovim](https://neovim.io/) als mijn IDE, een sterk configureerbare CLI-tekstbewerker waarmee ik mijn omgeving kan afstemmen op mijn specifieke behoeften.
 Voel je vrij om mijn persoonlijke Neovim-configuratie op [GitHub](https://github.com/Dobefu/nvim-config) te bekijken.
 
-Ik maak ook diverse [persoonlijke projecten](/projects) in mijn vrije tijd om mijn vaardigheden te blijven verbeteren.
+Ik maak ook diverse [persoonlijke projecten](/projects/) in mijn vrije tijd om mijn vaardigheden te blijven verbeteren.
 Deze projecten variëren van webapplicaties tot CLI-toepassingen, om mijn expertise en praktijkervaring in het vakgebied te verbeteren.
 
 {{<page-break>}}

@@ -13,7 +13,7 @@ draft = false
     heroImgAlt = "Connor van Spronssen"
     heroImgURL = "/avatar-transparent.png"
     heroCtaText = "Explore my projects"
-    heroCtaURl = "/projects"
+    heroCtaURl = "/projects/"
 +++
 
 ## About Me
@@ -43,7 +43,7 @@ My development workflow is heavily influenced by my commitment to efficiency and
 That's why I like using [Neovim](https://neovim.io/), a highly configurable CLI text editor that allows me to tailor my environment to my specific needs.
 Feel free to explore my personal Neovim configuration on [GitHub](https://github.com/Dobefu/nvim-config).
 
-I also create various [personal projects](/projects) in my spare time to keep learning and improving my skills.
+I also create various [personal projects](/projects/) in my spare time to keep learning and improving my skills.
 These projects range from web applications to CLI applications, all aimed at enhancing my expertise and practical experience in the field.
 
 {{<page-break>}}

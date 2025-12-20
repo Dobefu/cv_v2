@@ -51,7 +51,7 @@
     style="view-transition-name: tags-{{- .File.UniqueID -}}"
   >
     {{- range .Params.Tags | sort -}}
-      <a class="tag" href="{{- printf "/tags/%s" . | relLangURL -}}">
+      <a class="tag" href="{{- printf "/tags/%s/" . | relLangURL -}}">
         {{- $iconPath := printf "static/icons/%s.svg" . -}}
         {{- $iconContent := readFile $iconPath -}}
 
