@@ -7,7 +7,14 @@
 {{- end -}}
 
 {{- if .Params.imgSrc -}}
-  <link fetchpriority="high" rel="preload" href="{{- .Params.imgSrc -}}" as="image" />
+  {{- $imgResource := resources.Get (strings.TrimPrefix "/" .Params.imgSrc) -}}
+  {{- $image := .Params.imgSrc | absURL -}}
+
+  {{- if $imgResource -}}
+    {{- $image = ($imgResource.Resize "768x432").Permalink -}}
+  {{- end -}}
+
+  <link fetchpriority="high" rel="preload" href="{{- $image -}}" as="image" />
 {{- end -}}
 
 {{- $cssFiles := resources.Match "css/**.css" -}}
