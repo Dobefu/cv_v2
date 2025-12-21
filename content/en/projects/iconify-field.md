@@ -1,10 +1,10 @@
 +++
 title = 'Iconify Field Drupal module'
 linkTitle = 'Iconify Field Drupal module'
-description = 'A Drupal module that provides, among other things, a field where an icon can be picked. This module has a submodule with CKEditor 5 integration, allowing content editors to easily insert icons inside their WYSIWYG editor.'
+description = 'A Drupal module that provides a field where an icon can be picked. Includes a submodule with CKEditor 5 integration, allowing content editors to easily insert icons.'
 tags = ['drupal', 'php', 'vuejs']
 date = '2025-02-23T17:14:48+01:00'
-lastmod = '2025-11-12T17:14:48+01:00'
+lastmod = '2025-12-20T17:48:37+01:00'
 weight = 0
 draft = false
 
